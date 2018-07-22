@@ -96,8 +96,8 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 
 } // parameters
 
-const char     CRYPTONOTE_NAME[]                             = "catalyst";
-const char     GENESIS_COINBASE_TX_HEX[]                     = "010a01ff0001c5f5b7d9a43a029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101c8b3eb861829c338eded4298e4ed66a1e41cbcc884a779c177e46f480014e08d";
+const char     CRYPTONOTE_NAME[]                             = "elienp";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "";
 
 const uint32_t GENESIS_NONCE                                 = 70;
 const uint64_t GENESIS_TIMESTAMP                             = 1529201466;
@@ -147,7 +147,7 @@ __attribute__((unused))
 // You may add here other checkpoints using the following format:
 // {<block height>, "<block hash>"},
 const std::initializer_list<CheckpointData> CHECKPOINTS = {
-  {1000,	"3818c26bbb67d523ef131939ce8adf98b1c5266f1da535728624701997aedee8" },
+  /*{1000,	"3818c26bbb67d523ef131939ce8adf98b1c5266f1da535728624701997aedee8" },
   {2000,	"0b988d37f053ab50a25ebc67eb951dc6af52cf5cf452921332026ef50026c3d8" },
   {3000,	"e950923633648b5d4fa2166fdde572accf03d9b5ab068c1c7b8ac914cddc61d3" },
   {4000,	"d8be2bea155b1d0e255d2d12d6492a368f0a32a1d4617dbd7a9471253851dd17" },	
@@ -158,12 +158,12 @@ const std::initializer_list<CheckpointData> CHECKPOINTS = {
   {8543,	"8fd6df542054977c9ffd2f50c7898ba527812048d18d2e3369d3a194bf76cbb2" },
   {9000,	"059692b22bf85921e5f2b6f02ae8dbc7797a9b1ea3c50babd10564595b6260d5" },
   {10000,	"469d59599a69f582a151d941548f6534c4f72db73b548d28058b4fa038348dd9" },
-  {11000,	"22cee7a42c0385e78fb8b89ab651cd0ecb399abeaade7ba60b5e801d288c0fae" },
+  {11000,	"22cee7a42c0385e78fb8b89ab651cd0ecb399abeaade7ba60b5e801d288c0fae" },*/
 };
 
 const std::map<const uint32_t, const uint8_t> Version = {
 	// {BlockIndex , Version}
-	{ 2500000, 1 }
+	//{ 2500000, 1 }
 };
 
 } // CryptoNote
