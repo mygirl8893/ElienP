@@ -96,7 +96,7 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 
 } // parameters
 
-const char     CRYPTONOTE_NAME[]                             = "elienp";
+const char     CRYPTONOTE_NAME[]                             = "gaxy";
 const char     GENESIS_COINBASE_TX_HEX[]                     = "";
 
 const uint32_t GENESIS_NONCE                                 = 70;
@@ -131,8 +131,7 @@ const size_t   P2P_DEFAULT_HANDSHAKE_INVOKE_TIMEOUT          = 5000; // 5 second
 const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "FF9507CA55455F37A3B783EE2C5123B8B6A34A0C5CAAE050922C6254161480C1";
 
 const std::initializer_list<const char*> SEED_NODES = {
-  "seed1.catalyst.cash:5290",
-  "seed2.catalyst.cash:5290",
+  ":5290",
 };
 
 struct CheckpointData {
@@ -147,18 +146,7 @@ __attribute__((unused))
 // You may add here other checkpoints using the following format:
 // {<block height>, "<block hash>"},
 const std::initializer_list<CheckpointData> CHECKPOINTS = {
-  /*{1000,	"3818c26bbb67d523ef131939ce8adf98b1c5266f1da535728624701997aedee8" },
-  {2000,	"0b988d37f053ab50a25ebc67eb951dc6af52cf5cf452921332026ef50026c3d8" },
-  {3000,	"e950923633648b5d4fa2166fdde572accf03d9b5ab068c1c7b8ac914cddc61d3" },
-  {4000,	"d8be2bea155b1d0e255d2d12d6492a368f0a32a1d4617dbd7a9471253851dd17" },	
-  {5000,	"9a7f649903c61fb9142a2d90582b02b56ba1e7ac0278466c7db51b0110989454" },
-  {6000,	"804b9c6eba79b0d001bdec87e252a2f9241d773b5ca6466b218a5054e87110f0" },
-  {7045,	"9415d1b923b4c0ea8a987891f69e596460d1af42b97e1e1acb3860b627f8cfec" },
-  {7859,	"773a99066c160bd832298b017f9f468be4d7ebc3a1865be01494ff0bea3c29af" },
-  {8543,	"8fd6df542054977c9ffd2f50c7898ba527812048d18d2e3369d3a194bf76cbb2" },
-  {9000,	"059692b22bf85921e5f2b6f02ae8dbc7797a9b1ea3c50babd10564595b6260d5" },
-  {10000,	"469d59599a69f582a151d941548f6534c4f72db73b548d28058b4fa038348dd9" },
-  {11000,	"22cee7a42c0385e78fb8b89ab651cd0ecb399abeaade7ba60b5e801d288c0fae" },*/
+  /*{1000,	"3818c26bbb67d523ef131939ce8adf98b1c5266f1da535728624701997aedee8" },*/
 };
 
 const std::map<const uint32_t, const uint8_t> Version = {
