@@ -1,3 +1,9 @@
+// Copyright (c) 2012-2017, The CryptoNote developers, The Bytecoin developers
+// Copyright (c) 2014-2018, The Monero Project
+// Copyright (c) 2018, The Gaxy Developers
+// 
+// Please see the included LICENSE file for more information.
+
 #pragma once
 
 #include <cstdint>
@@ -18,7 +24,7 @@ const uint64_t CRYPTONOTE_DEFAULT_TX_SPENDABLE_AGE           = 10;
 const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 30;
 const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW_V1          = 11;  //jagerman's patch 
 
-const uint64_t MONEY_SUPPLY                                  = UINT64_C(2100000000000000000);
+const uint64_t MONEY_SUPPLY                                  = UINT64_C(63000000000000);
 
 const size_t   CRYPTONOTE_COIN_VERSION                       = 1;
 const size_t   MIN_MIXIN                          	     = 0;
@@ -29,26 +35,26 @@ const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V2      = 1000000;
 const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V1      = 100000;
 const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_CURRENT = CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE;
 const size_t   CRYPTONOTE_COINBASE_BLOB_RESERVED_SIZE            = 600;
-const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT                  = 8;
+const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT                  = 6;
 
 // COIN - number of smallest units in one coin
 const uint64_t POINT                                         = UINT64_C(1000); // pow(10, 3)
 const uint64_t COIN                                          = UINT64_C(100000000); // pow(10, 6)
 const uint64_t TAIL_EMISSION_REWARD                          = UINT64_C(10000000000);
-const uint64_t PRE_BLOCK_REWARD	                             = UINT64_C(84100000000000000); // premine first block
+const uint64_t PRE_BLOCK_REWARD	                             = UINT64_C(3150000000000); // premine first block
 const uint64_t MINIMUM_FEE                                   = UINT64_C(1000000); // pow(10, 5)
 const uint64_t DEFAULT_DUST_THRESHOLD                        = UINT64_C(1000000); // pow(10, 5)
 const unsigned EMISSION_SPEED_FACTOR 			     = 20;
 static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
-const uint64_t DIFFICULTY_TARGET                             = 120; // LWMA-2
+const uint64_t DIFFICULTY_TARGET                             = 300; // LWMA-2
 const uint64_t CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT            = 60 * 60 * 2;
 const uint64_t CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT_V1         = 3 * DIFFICULTY_TARGET;  //LWMA
 const uint64_t EXPECTED_NUMBER_OF_BLOCKS_PER_DAY             = 24 * 60 * 60 / DIFFICULTY_TARGET;
 const size_t   DIFFICULTY_WINDOW                             = EXPECTED_NUMBER_OF_BLOCKS_PER_DAY; // blocks
 const size_t   DIFFICULTY_WINDOW_V2                          = 17;  // blocks
 const size_t   DIFFICULTY_WINDOW_V3                          = 60 + 1;  // blocks
-const size_t   DIFFICULTY_CUT                                = 30;  // timestamps to cut after sorting
+const size_t   DIFFICULTY_CUT                                = 60;  // timestamps to cut after sorting
 
 const uint64_t DEPOSIT_MIN_AMOUNT                            = 1 * COIN;
 const uint32_t DEPOSIT_MIN_TERM                              = 22000; // ~1 month [this block of 1 mo]
@@ -100,7 +106,7 @@ const char     CRYPTONOTE_NAME[]                             = "gaxy";
 const char     GENESIS_COINBASE_TX_HEX[]                     = "";
 
 const uint32_t GENESIS_NONCE                                 = 70;
-const uint64_t GENESIS_TIMESTAMP                             = 1529201466;
+const uint64_t GENESIS_TIMESTAMP                             = 1533051320;
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   = 1;
 const uint8_t  CURRENT_BLOCK_MAJOR                           = 1; //if put current 2 then next is 3 and soon....
@@ -112,8 +118,8 @@ const size_t   BLOCKS_IDS_SYNCHRONIZING_DEFAULT_COUNT        = 10000; // by defa
 const size_t   BLOCKS_SYNCHRONIZING_DEFAULT_COUNT            = 128; // by default, blocks count in blocks downloading
 const size_t   COMMAND_RPC_GET_BLOCKS_FAST_MAX_COUNT         = 1000;
 
-const int      P2P_DEFAULT_PORT                              = 5290;
-const int      RPC_DEFAULT_PORT                              = 5295;
+const int      P2P_DEFAULT_PORT                              = 7790;
+const int      RPC_DEFAULT_PORT                              = 7795;
 
 const size_t   P2P_LOCAL_WHITE_PEERLIST_LIMIT                = 1000;
 const size_t   P2P_LOCAL_GRAY_PEERLIST_LIMIT                 = 5000;
@@ -131,7 +137,7 @@ const size_t   P2P_DEFAULT_HANDSHAKE_INVOKE_TIMEOUT          = 5000; // 5 second
 const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "FF9507CA55455F37A3B783EE2C5123B8B6A34A0C5CAAE050922C6254161480C1";
 
 const std::initializer_list<const char*> SEED_NODES = {
-  ":5290",
+  ":7790",
 };
 
 struct CheckpointData {
