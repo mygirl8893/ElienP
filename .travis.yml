@@ -6,7 +6,8 @@ script: make
 matrix:
   include:
     # works on debian-jessir
-    - os: linux
+     os: - linux
+         - osx
       addons:
         apt:
           packages:
