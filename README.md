@@ -1,31 +1,20 @@
-[![Build Status](https://travis-ci.org/FndNur1Labs/Catalyst-Evo.svg?branch=master)](https://travis-ci.org/FndNur1Labs/Catalyst-Evo)
+[![Build Status](https://travis-ci.org/mygirl8893/Gaxy-testnet.svg?branch=master)](https://travis-ci.org/mygirl8893/Gaxy-testnet)
 
 <h2>Introduction</h2>
 
 We’ve built a custom platform to Future of Cryptocurrency. CryptonoteEvo is a platform technology for next generation of cryptonight.
 
-Catalyst Coin is the most secure, stable, and decentralized platform amongst the thousands of digital currencies in the market today.
+Gaxy Coin is the most secure, stable, and decentralized platform amongst the thousands of digital currencies in the market today.
 Catalyst is an innovative, cryptographically-secured digital asset ledger based on blockchain technology. Developed in part from the core code behind Karbo.
 
 <h2>We are trying to do things no cryptocurrency has ever done before. The Completly Masternode Solution in cryptonote world.</h2>
 
-For more details visit our Website :
 
-https://catalyst.cash
-
--= Building CatalystCoin =-
+-= Building =-
 
 <h2>On *nix:</h2>
 
 Dependencies: GCC 4.7.3 or later, CMake 3.11.3 or later, Boost_1_67 or later.
-
-You may download them from:
-
-http://gcc.gnu.org/
-
-http://www.cmake.org/
-
-http://www.boost.org/
 
 Alternatively, it may be possible to install them using a package manager.
 
@@ -49,8 +38,8 @@ sudo apt update
 
 sudo apt upgrade
 
-git clone https://github.com/CatalystCash/Catalyst-Evo.git catalyst
-cd catalyst
+git clone https://github.com/mygirl8893/Gaxy-testnet.git gaxy
+cd gaxy
 git submodule init
 git submodule update --remote
 make -j4
@@ -59,7 +48,7 @@ Note : If you need cmake version error please follow below setps.
 
 ```bash
 
-cd catalyst/modules/cmake
+cd gaxy/modules/cmake
 ./bootstrap && make && make install
 ```
 
@@ -67,17 +56,11 @@ cd catalyst/modules/cmake
 
 Dependencies: MSVC 2017 or later, CMake 3.11.3 or later, and Boost_1_67_0-msvc-14.1 or later. You may download them from:
 
-http://www.microsoft.com/
-
-http://www.cmake.org/
-
-http://www.boost.org/
-
 To build, change to a directory where this file is located, and run this commands: (VisualStudio 2017)
 
 ```bash
-git clone https://github.com/CatalystCash/Catalyst-Evo.git catalyst
-cd catalyst
+git clone https://github.com/mygirl8893/Gaxy-testnet.git gaxy
+cd gaxy
 git submodule init
 git submodule update --remote
 mkdir build && cd build && cmake .. -G "Visual Studio 15 Win64" ..
@@ -87,7 +70,3 @@ then open catalyst.sln File on Visual Studio
 In VS' Solution Explorer select upnpc-static' Properies -> C/C++ -> Code Generation -> Runtime Library - > change it to Multi-threaded (/MT)
 
 And Finaly do the Build.
-
-Good luck!
-
-Powered by Nur1Labs[twitter:@nur1labs] Engine
