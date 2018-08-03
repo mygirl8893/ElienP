@@ -9,7 +9,6 @@ Catalyst is an innovative, cryptographically-secured digital asset ledger based 
 
 <h2>We are trying to do things no cryptocurrency has ever done before. The Completly Masternode Solution in cryptonote world.</h2>
 
-
 -= Building =-
 
 <h2>On *nix:</h2>
